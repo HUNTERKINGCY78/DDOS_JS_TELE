@@ -95,5 +95,5 @@ sleep 4
 clear
 
 loading_effect
+node index.js
 
-npm start 
