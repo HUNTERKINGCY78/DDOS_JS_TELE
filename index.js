@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const { exec } = require('child_process');
 
 // Thay thế bằng mã thông báo bot Telegram của bạn
-const token = '7197126265:AAF9KZkadzutM1oGTjXmeWfHLMwrBS-QK3U';
+const token = '7507308884:AAHCQzy4zXtjyobrVMvheDHpHcjr9uOSEk8';
 
 // Khởi tạo bot bằng mã thông báo
 const bot = new TelegramBot(token, { polling: true });
@@ -13,11 +13,11 @@ function logActivity(msg) {
     const chat = msg.chat;
     const command = msg.text.toLowerCase();
 
-    console.log(`Hoạt động sử dụng Bot Telegram`);
+    console.log(`Itu tidak bisa dilakukan Bot Telegram`);
     console.log(`• User ID: ${user.id}`);
     console.log(`• Username: ${user.username || 'không'}`);
     console.log(`• Chat ID: ${chat.id}`);
-    console.log(`• Đặt hàng: ${command}`);
+    console.log(`• Tidak masalah: ${command}`);
 }
 
 // Trình xử lý sự kiện cho tin nhắn từ người dùng
@@ -53,11 +53,11 @@ bot.on('message', (msg) => {
                 }
                 // Hiển thị đầu ra stdout nếu thành công
                 console.log(`stdout: ${stdout}`);
-                bot.sendMessage(chatId, 'Quá trình đã bắt đầu.');
+                bot.sendMessage(chatId, 'Apa yang harus dilakukan?.');
             });
         } else {
             // Thông báo cho người dùng rằng định dạng tin nhắn không chính xác
-            bot.sendMessage(chatId, 'Định dạng tin nhắn không chính xác. Sử dụng định dạng: /mix [url] [time] [thread] [rate]');
+            bot.sendMessage(chatId, 'Anda dapat melakukan hal yang sama.  Tidak ada gunanya: /mix [url] [time] [thread] [rate]');
         }
     }
 });
